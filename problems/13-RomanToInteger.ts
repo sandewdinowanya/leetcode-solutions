@@ -26,14 +26,14 @@ function romanToInt(s: string): number {
 
     for(let i=0; i<=numArray.length-1; i++){
         if(numArray[i]!== undefined){
-            if(numArray[i]>=numArray[i+1]){
-                total = total + numArray[i]
+            if(numArray[i]!>=numArray[i+1]!){
+                total = total + numArray[i]!
             }
             else if(i==numArray.length-1){
-                total =  total + numArray[numArray.length-1]
+                total =  total + numArray[numArray.length-1]!
             }
             else{
-                total = total - numArray[i]
+                total = total - numArray[i]!
             }
         }
     }
